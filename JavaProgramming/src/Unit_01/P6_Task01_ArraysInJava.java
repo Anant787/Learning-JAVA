@@ -39,7 +39,7 @@ public class P6_Task01_ArraysInJava {
 		
 		//Initialization, during initialization we have to provide the size of the 
 		//array
-		array1 = new int[6]; //{1,2,3,4};
+		array1 =new int[6]; //{1,2,3,4};
 		
 		//assigning values to the java array
 		for (int i=0; i < array1.length; i++) // length is the property of array
@@ -82,7 +82,7 @@ public class P6_Task01_ArraysInJava {
 }
 
 static void arrayAsParameter(int arr[]) { // declare empty array as parameter
-	for(int i = 0; i < arr.length; i++)//length is the property of array
+	for(int i = 0; i < arr.length; i++)//length is the property of arraY
 		System.out.println(arr[i]);
 }
 

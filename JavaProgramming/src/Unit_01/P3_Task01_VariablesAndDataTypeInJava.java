@@ -13,7 +13,7 @@ package Unit_01;
        
        
        #Static Variable ::
-       -Static variable are definedwith the STATIC keyword
+       -Static variable are defined with the STATIC keyword
        -Static variable are initialized only once,at the start of program execution.
        -These static variables should be initialized first, before the initialization of any 
        

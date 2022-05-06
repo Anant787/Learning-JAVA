@@ -16,9 +16,9 @@ public class P5_Task02_MethodInJava {
 
 class ABC3 {
 	
-	static int a =10;
+	static int a =5;
 	
-	/*Actual methof defination
+	/*Actual method defination
 	 * 
 	 *DataType methodName(DataType2 p1, DataType2 p2)
 	 *{
@@ -29,7 +29,7 @@ class ABC3 {
 	 */
 	static void display()
 	{
-		int b = 10;
+		int b = 11;
 		int a = 10;
 		System.out.println(b);
 		System.out.println(a);

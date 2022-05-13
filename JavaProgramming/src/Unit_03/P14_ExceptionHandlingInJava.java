@@ -21,7 +21,11 @@ public class P14_ExceptionHandlingInJava {
         //obj.stackOverFlowError(1);
          obj.indexOutOfBoundException();
          obj.nullPointerException();
-         obj.useOfThrow();
+         try {
+			obj.useOfThrow(6);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
          obj.useOfThrows_And_Finally();
 	}
 
@@ -92,7 +96,7 @@ class ExceptionInJava
 			stackOverFlowError(i);
 		}
 	   }
-	   catch(StackOverflowError e)
+	   catch(Exception e)
 	   {
 		    System.out.println(e.getMessage());
 	   }
@@ -123,12 +127,33 @@ class ExceptionInJava
 		}
 		System.out.println("rest of the code");
 	}
-	void useOfThrow()
+	void useOfThrow(int age) throws Exception         // Throws informs that the method contains an exception but not resolved
 	{
+		if(age<18)
+		{
+			throw new Exception();
+		}
+		else
+		{
+			System.out.println("You are allowed to enter");
+		}
 		
 	}
 	void useOfThrows_And_Finally()
 	{
+		//useOfThrow(17);    // show an exception error for not handling the exception in method useOfThrow
+		                    // compiler knows that exception come here and do use of TRY CATCH
 		
+		try {
+			useOfThrow(17);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		finally
+		{
+			System.out.println("Always excuted");
+		}
 	}
 }
